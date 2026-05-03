@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hiša Vinmak – prenovljena predstavitvena spletna stran z uporabo HTML5 in Bootstrap 5."
+    />
+    <title>Hiša Vinmak | Domača stran</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-vinmak shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#domov">Hiša Vinmak</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Preklopi navigacijo"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="#domov">Domov</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ponudba">Ponudba</a></li>
+              <li class="nav-item"><a class="nav-link" href="#o-nas">O nas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#galerija">Galerija</a></li>
+              <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+            <a href="#rezervacija" class="btn btn-warning ms-lg-3">Rezerviraj</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="domov" class="hero-section text-white d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row py-lg-5">
+            <div class="col-lg-8">
+              <span class="badge bg-warning text-dark mb-3">Dobrodošli na prenovljeni strani</span>
+              <h1 class="display-4 fw-bold">Hiša Vinmak – okus tradicije, udobje doma</h1>
+              <p class="lead mt-3">
+                Prenovljena spletna predstavitev za <strong>hisavinmak.si</strong>, pripravljena z uporabo
+                semantičnega HTML5 in Bootstrap 5 gradnikov.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a href="#ponudba" class="btn btn-warning btn-lg">Poglej ponudbo</a>
+                <a href="#kontakt" class="btn btn-outline-light btn-lg">Kontaktiraj nas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ponudba" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Naša ponudba</h2>
+            <p class="text-secondary">Izpostavljene storitve, ki jih lahko vključite tudi v končni prototip.</p>
+          </div>
+          <div class="row g-4">
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Nočitve</h3>
+                  <p class="card-text">Sodobno opremljene sobe z domačim ambientom in razgledom na vinograde.</p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Kulinarična ponudba</h3>
+                  <p class="card-text">Lokalne jedi, sezonski meniji in degustacije po predhodnem dogovoru.</p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h5">Dogodki</h3>
+                  <p class="card-text">Prostor za manjše dogodke, praznovanja in poslovna druženja.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galerija" class="py-5 bg-light">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+            <h2 class="fw-bold m-0">Galerija</h2>
+            <p class="m-0 text-secondary">Primer uporabe Bootstrap komponente <em>carousel</em>.</p>
+          </div>
+
+          <div id="vinmakCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#vinmakCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slika 1"></button>
+              <button type="button" data-bs-target="#vinmakCarousel" data-bs-slide-to="1" aria-label="Slika 2"></button>
+              <button type="button" data-bs-target="#vinmakCarousel" data-bs-slide-to="2" aria-label="Slika 3"></button>
+            </div>
+            <div class="carousel-inner rounded-3">
+              <figure class="carousel-item active mb-0">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1600&q=70" class="d-block w-100" alt="Pogled na vinograde" loading="lazy" />
+              </figure>
+              <figure class="carousel-item mb-0">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1600&q=70" class="d-block w-100" alt="Degustacija lokalnih dobrot" loading="lazy" />
+              </figure>
+              <figure class="carousel-item mb-0">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=70" class="d-block w-100" alt="Urejen ambient hiše" loading="lazy" />
+              </figure>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#vinmakCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Prejšnja</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#vinmakCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Naslednja</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="o-nas" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <h2 class="fw-bold">O nas</h2>
+              <p>
+                Hiša Vinmak povezuje tradicijo lokalnega okolja in sodoben pristop gostoljubja. Ta demonstracijska
+                spletna stran je pripravljena kot osnova za nalogo pri predmetu spletni sistemi.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">✔ Semantična HTML5 struktura</li>
+                <li class="list-group-item">✔ Postavitev z Bootstrap mrežo</li>
+                <li class="list-group-item">✔ Uporaba komponent: navbar, cards, carousel, form</li>
+              </ul>
+            </div>
+            <aside class="col-lg-6">
+              <div class="p-4 rounded-3 text-bg-dark shadow-sm">
+                <h3 class="h5">Napredek projekta (Kanban primer)</h3>
+                <div class="progress mb-3" role="progressbar" aria-label="Napredek" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning text-dark" style="width: 60%">60%</div>
+                </div>
+                <p class="mb-0">Dokumentirajte sprotni napredek, kdo je izvedel nalogo in datum izvedbe.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="py-5 bg-light">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <h2 class="fw-bold">Kontakt</h2>
+              <p class="text-secondary">Pošljite povpraševanje ali rezervacijo preko obrazca.</p>
+              <address class="small">
+                <strong>Hiša Vinmak</strong><br />
+                Vzorec 12, 2000 Maribor<br />
+                E: info@hisavinmak.si<br />
+                T: +386 40 123 456
+              </address>
+            </div>
+            <div class="col-lg-7" id="rezervacija">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="ime" class="form-label">Ime in priimek</label>
+                  <input type="text" class="form-control" id="ime" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-pošta</label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="datum" class="form-label">Želeni datum</label>
+                  <input type="date" class="form-control" id="datum" />
+                </div>
+                <div class="col-md-6">
+                  <label for="osebe" class="form-label">Število oseb</label>
+                  <select id="osebe" class="form-select">
+                    <option selected>Izberite...</option>
+                    <option>1-2</option>
+                    <option>3-5</option>
+                    <option>6+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="sporocilo" class="form-label">Sporočilo</label>
+                  <textarea class="form-control" id="sporocilo" rows="4"></textarea>
+                </div>
+                <div class="col-12 d-grid d-sm-flex gap-2">
+                  <button class="btn btn-warning" type="submit">Pošlji povpraševanje</button>
+                  <button class="btn btn-outline-secondary" type="reset">Počisti</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white-50">
+      <div class="container d-flex justify-content-between flex-wrap gap-2">
+        <small>© 2026 Hiša Vinmak. Vse pravice pridržane.</small>
+        <small>Izdelano z Bootstrap 5 za študijsko nalogo.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
