@@ -1,0 +1,55 @@
+// Custom Bootstrap theme — Hiša vin Mak
+$primary: #5a1a1f;
+$secondary: #b97a4a;
+$body-bg: #f7f1e6;
+$body-color: #2b211b;
+$dark: #2b211b;
+$font-family-sans-serif: 'Inter', system-ui, sans-serif;
+$headings-font-family: 'Cormorant Garamond', serif;
+$headings-font-weight: 500;
+$enable-rounded: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+body { font-family: $font-family-sans-serif; }
+h1,h2,h3,h4,h5 { font-family: $headings-font-family; letter-spacing: .02em; }
+
+.navbar-mak {
+  background: rgba(255,255,255,.95);
+  .nav-link { font-size: .75rem; letter-spacing: .25em; text-transform: uppercase; color: $dark; }
+  .nav-link:hover, .nav-link.active { color: $primary; }
+  .brand-logo { font-family: $headings-font-family; font-size: 1.5rem; }
+}
+
+.hero {
+  position: relative; height: 88vh; min-height: 560px;
+  background-size: cover; background-position: center;
+  display: flex; align-items: center; justify-content: center;
+  &::before { content:''; position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.25)); }
+  .hero-inner { position:relative; z-index:2; text-align:center; color:#fff; }
+  h1 { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing:.08em; }
+}
+
+.section-quote { font-family: $headings-font-family; font-style: italic; font-size: 1.5rem; color: rgba($dark,.75); }
+
+.wine-card { background:#fff; border:1px solid rgba($dark,.08); padding: 1.75rem; transition:.2s; }
+.wine-card:hover { box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.08); }
+.wine-card .wine-type { font-size:.7rem; letter-spacing:.25em; color:$secondary; text-transform:uppercase; }
+.wine-card .price { font-family:$headings-font-family; color:$primary; font-size:1.5rem; }
+
+.img-frame { width:100%; height:420px; object-fit:cover; object-position: center; box-shadow: 0 1rem 2rem rgba(0,0,0,.12); }
+
+.wine-img-frame { width:100%; height:420px; object-fit:contain; object-position: center;}
+
+.site-footer { background:#2b211b; color:rgba(255,255,255,.7); padding: 3rem 0 2rem; font-size:.875rem;
+  h6 { color:#fff; font-family:$font-family-sans-serif; font-size:.7rem; letter-spacing:.25em; text-transform:uppercase; margin-bottom:1rem; }
+}
+
+.btn-mak { background:$primary; color:#fff; border:none; padding:.75rem 2rem; font-size:.7rem; letter-spacing:.25em; text-transform:uppercase; }
+.btn-mak:hover { background: darken($primary, 8%); color:#fff; }
+
+.divider-line { height:1px; width:60px; background:rgba(255,255,255,.6); margin: 2rem auto; }
+
+
