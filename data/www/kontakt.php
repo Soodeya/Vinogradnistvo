@@ -1,3 +1,7 @@
+<?php include 'db.php'; ?>
+
+<?php include 'header.php'; ?>
+
 <!doctype html>
 <html lang="sl">
 <head>
@@ -7,27 +11,16 @@
 <meta name="description" content="Pišite nam ali rezervirajte degustacijo v Hiši vin Mak.">
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+<?php if(isset($_GET['success'])): ?>
 
-<header>
-<nav class="navbar navbar-expand-lg navbar-mak shadow-sm fixed-top py-4"
-     style="background: rgba(255,255,255,0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
-  <div class="container">
-    <ul class="navbar-nav me-auto d-none d-lg-flex flex-row gap-5">
-      <li class="nav-item"><a class="nav-link active" href="o_nas.html">O nas</a></li>
-      <li class="nav-item"><a class="nav-link" href="vina.html">Ponudba vin</a></li>
-      <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-    </ul>
-    <a href="index.html" class="navbar-brand brand-logo mx-auto position-absolute start-50 translate-middle-x"><img src="logo.png" style="max-height: 80px; width: auto;" alt="Logo"></a>
-    <div class="d-none d-lg-flex gap-3 ms-auto">
-       <a href="https://www.facebook.com/profile.php?id=100057152782480" target="_blank" class="text-dark"><img src="facebook.png" alt="Facebook" height="32px" width="32px"></a>
-      <a href="https://www.instagram.com/hisavinmak" target="_blank" class="text-dark"><img src="instagram.png" alt="Instagram" height="32px" width="32px"></a>
-  </div>
-</nav>
-</header>
+<script>
+    alert("Povpraševanje uspešno poslano!");
+</script>
 
-
+<?php endif; ?>
 
 <main style="padding-top:80px">
 <section class="hero" style="background-image:url('slika_zgodovina_1.jpg')">
@@ -72,35 +65,35 @@
 
           <h3>Pošlji povpraševanje</h3>
 
-          <form>
+            <form action="form.php" method="POST">
 
-            <div class="mb-3">
-              <label class="form-label">Ime</label>
-              <input type="text" class="form-control" required>
-            </div>
+                <div class="mb-3">
+                  <label class="form-label">Ime</label>
+                  <input type="text" class="form-control" name="ime" required>
+                </div>
 
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" required>
-            </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
 
-            <div class="mb-3">
-              <label class="form-label">Telefon</label>
-              <input type="tel" class="form-control">
-            </div>
+                <div class="mb-3">
+                  <label class="form-label">Telefon</label>
+                  <input type="tel" class="form-control" name="telefon">
+                </div>
 
-            <div class="mb-3">
-              <label class="form-label">Sporočilo</label>
-              <textarea class="form-control" rows="4" required></textarea>
-            </div>
+                <div class="mb-3">
+                  <label class="form-label">Sporočilo</label>
+                  <textarea class="form-control" rows="4" name="sporocilo" required></textarea>
+                </div>
 
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-mak px-5" type="submit">
-                Pošlji povpraševanje
-              </button>
-            </div>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-mak px-5" type="submit">
+                    Pošlji povpraševanje
+                  </button>
+                </div>
 
-          </form>
+            </form>
 
         </div>
 
@@ -163,16 +156,7 @@
 
 
 </main>
+</body>
+</html>
 
-<footer class="site-footer">
-  <div class="container"><div class="row g-4">
-    <div class="col-md-3"><h6>Hiša vin Mak</h6><p>Vodole 3c<br>2229 Malečnik</p></div>
-    <div class="col-md-3"><h6>Delovnik</h6><p>Petek in sobota: 10:00–22:00<br>Nedelja in prazniki: 15:00-20:00</p></div>
-    <div class="col-md-3"><h6>Prodaja vin</h6><p>Andrej Mak<br>041 423 815<br>andrej.mak@gmail.com</p></div>
-    <div class="col-md-3"><h6>Rezervacije</h6><p>Mateja Tomažič<br>031 404 110<br>matejamak@gmail.com</p></div>
-  </div><hr class="border-secondary mt-4"><p class="text-center small mb-0">© 2025 Hiša vin Mak</p></div>
-</footer>
-
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body></html>
+<?php include 'footer.php'; ?>
