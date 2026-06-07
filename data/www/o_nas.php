@@ -136,7 +136,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="vina.html" class="btn btn-primary tracking-wide">
+      <a href="vina.php" class="btn btn-primary tracking-wide">
         OGLEJ SI PONUDBO VIN
       </a>
     </div>

@@ -36,7 +36,7 @@
       <h2 class="mb-4">O NAS</h2>
       <p>V Hiši vin MAK že več generacij z ljubeznijo nadaljujemo vinogradniško tradicijo in ustvarjamo kakovostna vina iz skrbno obdelanih vinogradov v okolici Malečnika. Naša zgodba temelji na predanosti, družinski tradiciji in sodobnem pristopu k pridelavi svežih belih, rdečih, rosé in penečih vin. Obiskovalcem ponujamo pristno vinsko izkušnjo v sodobni kleti z degustacijsko sobo in čudovitim razgledom...</p>
             <div class="text-center mt-4">
-      <a href="o_nas.html" class="btn btn-primary tracking-wide">
+      <a href="o_nas.php" class="btn btn-primary tracking-wide">
         PREBERI VEČ
       </a>
     </div>
@@ -58,7 +58,7 @@
       <h2 class="mb-4">PONUDBA VIN</h2>
       <p>V ponudbi Hiše vin MAK najdete kakovostna bela, rdeča, rosé in peneča vina iz domačih vinogradov, ustvarjena s poudarkom na tradiciji, svežini in pristnih okusih.</p>
             <div class="text-center mt-4">
-     <a href="vina.html" class="btn btn-primary tracking-wide">
+     <a href="vina.php" class="btn btn-primary tracking-wide">
         PREBERI VEČ
       </a>
     </div>
@@ -78,7 +78,7 @@
 <section class="bg-white py-5">
   <div class="container text-center">
       <h2 class="mb-4">REZERVACIJA IN NAROČILO VINA </h2>
-       <a href="kontakt.html" class="btn btn-primary tracking-wide">
+       <a href="kontakt.php" class="btn btn-primary tracking-wide">
         KLIKNI TUKAJ
       </a>
   </div>

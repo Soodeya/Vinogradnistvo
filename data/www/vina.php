@@ -133,7 +133,7 @@
   <div class="row align-items-center text-center g-5">
     <div class="col-">
       <h2 class="mb-4">NAROČILO VINA </h2>
-       <a href="kontakt.html" class="btn btn-primary tracking-wide">
+       <a href="kontakt.php" class="btn btn-primary tracking-wide">
         KLIKNI TUKAJ
       </a>
 </section>
