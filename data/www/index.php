@@ -91,6 +91,62 @@
     </p>
   </div>
 </section>
+
+<section class="container">
+    <h2> Podatki </h2>
+
+    <?php
+
+    include 'db.php';
+
+    $sql = "SELECT * FROM stranka";
+
+    $stmt = $conn->query($sql);
+
+    $podatki = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    ?>
+
+    <table border="1">
+
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Ime</th>
+      <th>Email</th>
+      <th>Telefon</th>
+      <th>Sporočilo</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <?php
+
+    foreach($podatki as $row){
+    ?>
+
+<tr>
+    <td> <?= htmlspecialchars($row["id"]); ?></td>
+    <td> <?= htmlspecialchars($row["ime"]); ?> </td>
+    <td> <?= htmlspecialchars($row["email"]); ?> </td>
+    <td> <?= htmlspecialchars($row["telefon"]); ?> </td>
+    <td> <?= htmlspecialchars($row["sporocilo"]); ?> </td>
+
+</tr>
+
+
+
+    <?php
+    }
+
+    ?>
+
+</tbody>
+</table>
+
+</section>
+
 </main>
 </body></html>
 

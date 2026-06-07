@@ -55,7 +55,7 @@
 
           <h3>Pošlji povpraševanje</h3>
 
-          <form>
+          <form method="POST" action="db.php">
 
             <div class="mb-3">
               <label class="form-label">Ime</label>
