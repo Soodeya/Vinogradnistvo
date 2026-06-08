@@ -59,22 +59,22 @@
 
             <div class="mb-3">
               <label class="form-label">Ime</label>
-              <input type="text" class="form-control" required>
+              <input type="text" name="ime" class="form-control" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Email</label>
-              <input type="email" class="form-control" required>
+              <input type="email" name="email" class="form-control" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Telefon</label>
-              <input type="tel" class="form-control">
+              <input type="tel" name="telefon" class="form-control">
             </div>
 
             <div class="mb-3">
               <label class="form-label">Sporočilo</label>
-              <textarea class="form-control" rows="4" required></textarea>
+              <textarea class="form-control" name="sporocilo" rows="4" required></textarea>
             </div>
 
             <div class="d-flex justify-content-center">

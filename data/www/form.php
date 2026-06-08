@@ -11,7 +11,7 @@ $sql = "INSERT INTO stranka
 (ime, email, telefon)
 
 VALUES
-('$ime', '$email', '$telefon')";
+('$ime', '$email', '$telefon', '$sporocilo')";
 
 $conn->exec($sql);
 

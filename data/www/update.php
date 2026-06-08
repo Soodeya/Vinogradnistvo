@@ -50,16 +50,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Preberemo podatke obstoječe restavracije
-$sqlRestavracija = "SELECT *
-                    FROM restavracija
+$sql = "SELECT *
+                    FROM stranka
                     WHERE id = ?";
 
-$stmtRestavracija = $conn->prepare($sqlRestavracija);
-$stmtRestavracija->bind_param("i", $id);
-$stmtRestavracija->execute();
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id);
+$stmt->execute();
 
-$resultRestavracija = $stmtRestavracija->get_result();
-$restavracija = $resultRestavracija->fetch_assoc();
+$result = $stmt->get_result();
+$stranka = $result->fetch_assoc();
 
-$stmtRestavracija->close();
+$stmt->close();
 ?>
